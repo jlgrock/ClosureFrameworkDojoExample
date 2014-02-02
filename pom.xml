@@ -43,18 +43,22 @@
 			</plugin>
              -->
             
-            <!-- 
-             Compiles the code using the Closure Compiler.
-             
-             You can add/adjust this section if you need to adjust the 
-             default version of the closure library.
-            
-            <plugin>
+            <!-- Compiles the code using the Closure Compiler. You can add/adjust 
+				this section if you need to adjust the default version of the closure library or if you want to set some define objects. -->
+			<!-- <plugin>
 				<groupId>com.github.jlgrock.javascript-framework</groupId>
 				<artifactId>closure-compiler-maven-plugin</artifactId>
 				<version>${jsframework.version}</version>
-			</plugin>
-            -->
+				<configuration>
+					<defines>
+						<define>
+							<defineName>TESTING.ENABLED</defineName>
+							<value>false</value>
+							<valueType>boolean</valueType>
+						</define>
+					</defines>
+				</configuration>
+			</plugin> -->
             
             <!-- Testing maven plugin - Generates and parses test files which
              are, by default, put into the ${project}/src/test/javascript
